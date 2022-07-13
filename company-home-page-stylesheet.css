@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Ubuntu;
+    font-size: 16px;
+    max-width: 1250px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #111d27;
+    height: 3em;
+    align-items: center;
+    position: sticky;
+}
+
+.light {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+button.link {
+    background-color: white;
+    padding: 0.8em 2em;
+    margin: 1em;
+}
+
+.logo img{
+    height: 1.75rem;
+}
+
+main {
+    background-color: #111d27;
+    background-image: url('images/hero_background.svg');
+    background-repeat: no-repeat;
+    height: 728px;
+    background-position: top 23px right 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+h1 {
+    margin-top: 2em;
+    font-size: 4rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    max-width: 470px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin: 5rem;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.content {
+    grid-column: 2 / span 10;
+    line-height: 1.3em;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-container {
+    margin-bottom: 2em;
+}
+
+.text-container p {
+    max-width: 448px;
+}
+
+button.primary {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    padding: 1em 2.5em;
+    margin-right: 1em;
+    font-size: 17px;
+}
+
+button.secondary {
+    background-color: #111d27;
+    color: white;
+    border: 1px solid white;
+    padding: 1em 1.6em;
+    font-size: 17px;
+}
+
+#quizzes {
+    background-image: url('images/chevron_bg_1.svg');
+    background-color: #111d27;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto 100%;
+}
+
+.quiz-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 294px));
+    gap: 6rem 1.5rem;
+    justify-content: center;
+    margin: 6rem auto;
+}
+
+.quiz-item {
+    background-color: #0066ff;
+    height: 350px;
+    padding: 20px;
+    line-height: 2.5;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.quiz-item p {
+    line-height: 2;
+    font-size: 15px;
+    padding: 10px;
+}
