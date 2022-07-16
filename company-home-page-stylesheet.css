@@ -6,7 +6,7 @@
 body {
     font-family: Ubuntu;
     font-size: 16px;
-    max-width: 1250px;
+    max-width: 1600px;
 }
 
 nav {
@@ -117,17 +117,20 @@ button.secondary {
 
 .quiz-item-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 294px));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
     gap: 6rem 1.5rem;
     justify-content: center;
     margin: 6rem auto;
+    max-width: 1200px;
 }
 
 .quiz-item {
     background-color: #0066ff;
     height: 350px;
-    padding: 20px;
+    padding: 15px;
     line-height: 2.5;
+    transition-duration: 0.3s;
+    width: 265px;
 }
 
 img{
@@ -141,4 +144,147 @@ img{
     line-height: 2;
     font-size: 15px;
     padding: 10px;
+}
+
+.languages-container span{
+    border: solid white 1px;
+    font-size: 14px;
+    padding: 0 10px;
+
+}
+
+.languages-container {
+    display: flex ;
+    width: 100%;
+    justify-content: space-between;
+}
+
+button.quiz {
+    width: 55%;
+    padding: 5px 15px;
+}
+
+h5.new {
+    line-height: 0.8;
+}
+
+.quiz-item h3 {
+    padding: 0;
+}
+
+.button-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.quiz-item:hover, .quiz-item:focus {
+    box-shadow: -10px 10px 0 #02d1ff;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.big-background {
+    background-image: url('images/chevron_bg_2.svg');
+    background-position: top center;
+    background-size: auto 1192px;
+}
+
+.go-through .text-container {
+    grid-column: 2 / span 4;
+    margin-top: 80px;
+    color: #111d27;
+}
+
+.go-through h2 {
+    margin: 5rem 5rem 5rem 0;
+}
+
+.go-through .p {
+    line-height: 1.5;
+}
+
+.steps-container {
+    grid-column: 9 / span 3;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.steps-item {
+    display: flex;
+    background-color: #213e56;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.steps-item img {
+    margin: 5px 30px;
+    padding: 10px 0 10px;
+    display: inline;
+}
+
+.steps-item span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats-item {
+    background-image: url('images/StackStat.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 380px;
+    width: 250px;
+}
+
+.stats-item:nth-child(2) {
+    margin-top: 200px;
+}
+
+.text-wrapper {
+    text-align: center;
+}
+
+.text-wrapper h2 {
+    margin-bottom: 35px;
+    margin: 80px auto 35px auto;
+    color: #111d27;
+}
+
+.text-wrapper p {
+    color: #111d27;
+}
+
+.partners .text-container {
+    text-align: center;
+    color: #111d27;
+}
+
+.partners .text-container p {
+    margin: auto;
+    max-width: 700px;
+}
+
+.partners .text-container h2 {
+    margin-bottom: 3rem;
+}
+
+.partner-img-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 140px);
+    gap: 2.75rem 2rem;
+    margin: 8rem auto;
+    max-width: 828px;
+}
+
+.partner-img-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
